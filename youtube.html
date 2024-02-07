@@ -6,77 +6,51 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <style>
-            p{
-                font-family:Roboto,Arial;
-                margin-top: 0;
-                margin-top:0;
+        <link rel="stylesheet" href="styles/styles.css">
 
-            }
-            .png{
-                width: 300px;
-                display: block;
-                
-            }
-            .search-bar{
-               
-                display: block;
-            }
-            .video-title{
-                margin-top: 0;
-                font-size: 16px;
-                font-weight: 500;
-                line-height:20px;
-                margin-bottom:20px ;
-
-
-            }
-            .video-preview{
-                width:300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right:15px;
-
-            }
-            .channel-picture{
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
-            }
-            .video-info{
-                display: inline-block;
-                width: 200px;
-
-
-            }
-            .video-author,.video-stats{
-                font-size: 12px;
-                color: rgb(96,96,96);
-            }
-            .video-author{
-                margin-bottom: 4px;
-
-            }
-           
-            .userpng{
-                width: 100%;
-                border-radius: 50%;
-            }
-            .video-image{
-                margin-bottom: 10px;
-            }
-       
-        </style>
     </head>
     <body>
-        <input class="search-bar" type="text" placeholder="Search">
+        <div class="header">
+            <div class="left-section">
+                <img class="barpng" src="threelines.webp" >
+                <img class="logopng" src="youtubelogo.png">
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button"><img src="searchicon.webp" class="searchiconpng"></button>
+                <button class="voice-button"><img src="voiceicon.png" class="voiceiconpng"></button>
+
+            </div>
+            <div class="right-section">
+                <img src="uploadicon.png" class="uploadiconpng">
+                <img src="appicon.png" class="appiconpng" >
+                <div class="notifications-icon-container">
+                    <img src="notificationicon.png" class="notificationiconpng">
+                    <div class="notifications-count">3</div>
+                </div>
+                    
+
+                <img src="profilepicture.png" class="profilepicturepng">
+
+
+            </div>
+        </div>
+
+        <div class="sidebar">
+            Sidebar
+        </div>
+        <div class="video-grid">
+
         
         <div class="video-preview">
             <div class="video-image"> 
                 <img class="png" src="demoimg.jpeg">
+                <div class="videotime">
+                    14:20
+                </div>
 
             </div>
-            <div>
+            <div class="video-info-grid">
                 <div class="channel-picture">
                     <img class="userpng" src="userimg.png">
 
@@ -99,9 +73,12 @@
         <div class="video-preview">
             <div class="video-image"> 
                 <img class="png" src="demoimg.jpeg">
+                <div class="videotime">
+                    14:20
+                </div>
 
             </div>
-            <div>
+            <div class="video-info-grid">
                 <div class="channel-picture">
                     <img class="userpng" src="userimg.png">
 
@@ -121,6 +98,119 @@
                 
             </div>
         </div>
+        <div class="video-preview">
+            <div class="video-image"> 
+                <img class="png" src="demoimg.jpeg">
+                <div class="videotime">
+                    24:03
+                </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="userpng" src="userimg.png">
+
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Talking about Law  with Lawyer Cagla Ozden
+            
+                    </p>
+                    <p class="video-author">
+                        calgaozden
+                    </p>
+                    <p class="video-stats">
+                        10.4M views &#183; 3 months ago
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="video-image"> 
+                <img class="png" src="demoimg.jpeg">
+                <div class="videotime">
+                    3:35
+                </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="userpng" src="userimg.png">
+
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Sneakers Headerssss!
+            
+                    </p>
+                    <p class="video-author">
+                        sneakersxx12
+                    </p>
+                    <p class="video-stats">
+                        590k views &#183; 2 weeks ago
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="video-image"> 
+                <img class="png" src="demoimg.jpeg">
+                <div class="videotime">
+                    8:29
+                </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="userpng" src="userimg.png">
+
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        University Life in IZTECH
+            
+                    </p>
+                    <p class="video-author">
+                        iyteedutr
+                    </p>
+                    <p class="video-stats">
+                        5k views &#183; 8 months ago
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="video-image"> 
+                <img class="png" src="demoimg.jpeg">
+                <div class="videotime">
+                    5:12
+                </div>
+
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <img class="userpng" src="userimg.png">
+
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        The importance of Github for students
+            
+                    </p>
+                    <p class="video-author">
+                        talkingwithstudents
+                    </p>
+                    <p class="video-stats">
+                        44M views &#183; 11 months ago
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     </body>
 
