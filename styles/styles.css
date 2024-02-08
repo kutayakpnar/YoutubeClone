@@ -1,7 +1,11 @@
 body{
     margin: 0;
     padding-top:80px;
-    padding-left: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    /*background-color: rgb(248,248,248);*/
+
+
 }
 .header{
     height: 55px;
@@ -69,6 +73,45 @@ body{
     border-color:rgb(192,192,192);
     margin-left: -1px;
     margin-right: 8px;
+
+}
+.search-button,
+.voice-button,
+.upload-icon-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-button .tooltip ,.voice-button .tooltip,
+.upload-icon-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom:-30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events:none ;
+    white-space: nowrap;
+    font-family: Roboto,Arial;
+
+
+
+
+
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-icon-container:hover .tooltip{
+    opacity:1;
+
 }
 .searchiconpng{
     height: 20px;
@@ -126,7 +169,7 @@ p{
     font-size: 16px;
     font-weight: 500;
     line-height:20px;
-    margin-bottom:20px ;
+    margin-bottom:10px ;
 
 
 }
@@ -160,7 +203,7 @@ p{
     border-radius: 50%;
 }
 .video-image{
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     position: relative;
 }
 .video-grid{
@@ -171,6 +214,19 @@ p{
 
 }
 
+@media (max-width:800px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (min-width: 1200px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
 .uploadiconpng{
     height: 24px;
 }
@@ -213,6 +269,10 @@ p{
     top:55px;
     background-color: white;
     width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+
+
 
 
 
@@ -234,5 +294,34 @@ p{
     border-radius:2px;
 
 
+
+}
+.sidebar-link {
+    
+    height: 100px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+
+
+
+}
+.sidebar-link:hover{
+    background-color: rgb(223, 221, 221);
+
+}
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 3px;
+
+
+}
+.sidebar-link div{
+    font-family: Roboto,Arial;
+    font-size: 10px;
 
 }
